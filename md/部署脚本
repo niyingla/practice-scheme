@@ -9,6 +9,7 @@ echo "input="$appname
 
 PID=$(ps -ef | grep $appname | grep -v grep | awk '{print $2}')
 
+#上一行代码执行的结果不是 0
 #if [ $? -eq 0 ]; then
 #    echo "process id:$PID"
 #else
